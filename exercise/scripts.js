@@ -1,16 +1,10 @@
-import './counter.js'
-
-window.addEventListener('load', () => {
-    createCounters();
-});
+import './input-comp.js';
+import './text-comp.js';
 
 
-function createCounters() {
-    const main = document.querySelector('main');
-    
-    for(let i = 1; i <= 10; i++) {
-        const el = document.createElement('counter-component');
+// it can also be done like this
+// document.querySelector('form').addEventListener('submit', (e) => {
+//     e.preventDefault();
 
-        main.appendChild(el);
-    }
-}
+//     addTextComp();
+// });

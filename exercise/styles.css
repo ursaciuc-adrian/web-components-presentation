@@ -2,40 +2,42 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #24292e;
 }
 
-.title {
+form {
     text-align: center;
-    color: #fff;
-    margin: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #24292e;
 }
 
-main {
-    padding: 30px;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: max-content;
-    grid-auto-flow: row dense;
-}
-
-counter-component {
-    text-align: center;
-    border-radius: 20px;
-    background-color: #fff;
-    padding: 30px 20px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-counter-component p {
+form label {
+    display: block;
     font-size: 20px;
+    margin-bottom: 5px;
 }
 
-counter-component button {
-    border: 1px solid gray;
-    border-radius: 3px;
+form input {
+    border: none;
+    font-size: 15px;
+    height: 40px;
+    padding: 0 10px;
+    border-bottom: 2px solid #24292e;
+    margin-right: 30px;
+}
+
+form button {
+    border: none;
+    height: 40px;
+    width: 100px;
+}
+
+text-comp {
+    display: flex;
+    margin: 10px;
     padding: 10px 20px;
+    background-color: #24292e;
+    color: #fff;
+    border-radius: 5px;
 }
